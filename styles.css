@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+button {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.gallery {
+  background-color: #bf9d69;
+}
+
+.container {
+  max-width: 930px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.photos {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  padding-top: 85px;
+  padding-bottom: 5px;
+  align-items: center;
+}
+
+.pet-photos {
+  width: 250px;
+  height: 250px;
+  left: 55px;
+  top: 325px;
+  margin-bottom: 25px;
+}
+
+.dogs-background {
+  display: none;
+}
+
+@media only screen and (min-width: 480px) {
+  .photos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .gallery {
+    background-color: #e6bc7e;
+  }
+  .pet-photos {
+    margin-bottom: 80px;
+  }
+
+  .dogs-background {
+    width: 550px;
+    height: 311.49px;
+    left: 96px;
+    top: 90px;
+  }
+  .hamburger {
+    display: none;
+  }
+}
