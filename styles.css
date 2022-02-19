@@ -6,16 +6,14 @@ html,
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #bf9d69;
 }
 
 a,
 button {
   cursor: pointer;
   text-decoration: none;
-}
-
-.gallery {
-  background-color: #bf9d69;
 }
 
 .container {
@@ -45,13 +43,83 @@ button {
   display: none;
 }
 
+header {
+  background-color: #040404;
+}
+
+.navbar {
+  display: flex;
+  height: 75px;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 30px;
+  margin-right: 36px;
+}
+
+.links {
+  display: none;
+}
+.logo {
+  justify-self: flex-start;
+  width: 53px;
+  height: 53px;
+  top: 11px;
+}
+
+h1 {
+  color: #e6bc7e;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  margin: 0;
+}
+
+.home {
+  margin: 20px;
+  margin-top: 81px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 11px;
+}
+
+.description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #bf9d69;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 30px;
+  padding-top: 0;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  background-color: #e6bc7e;
+  color: #403423;
+}
+
 @media only screen and (min-width: 480px) {
   .photos {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
-  .gallery {
+
+  html,
+  body {
     background-color: #e6bc7e;
   }
   .pet-photos {
@@ -66,5 +134,26 @@ button {
   }
   .hamburger {
     display: none;
+  }
+
+  li,
+  a {
+    display: inline-flex;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    color: #ffd18d;
+  }
+
+  .navbar {
+    height: 90px;
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 96px;
+    gap: 22px;
   }
 }
