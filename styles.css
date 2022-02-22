@@ -66,7 +66,7 @@ header {
   top: 11px;
 }
 
-h1 {
+.title {
   color: #e6bc7e;
   font-style: normal;
   font-weight: bold;
@@ -126,12 +126,6 @@ footer {
     margin-bottom: 80px;
   }
 
-  .dogs-background {
-    width: 550px;
-    height: 311.49px;
-    left: 96px;
-    top: 90px;
-  }
   .hamburger {
     display: none;
   }
@@ -150,10 +144,62 @@ footer {
     height: 90px;
   }
 
+  .logo {
+    margin-left: 56px;
+  }
+
   .links {
     display: flex;
     justify-content: space-evenly;
     margin-right: 96px;
     gap: 22px;
+  }
+
+  .dogs-background {
+    display: flex;
+    width: 550px;
+    height: 311.49px;
+    left: 96px;
+    top: 90px;
+  }
+
+  .home {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: space-between;
+  }
+
+  .content-box {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+  }
+
+  .title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 54px;
+    width: 394px;
+    height: 104px;
+    left: 711px;
+    top: 157px;
+    text-align: justify;
+  }
+
+  .description {
+    text-align: justify;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    width: 400px;
+    height: 39px;
+    left: 711px;
+    top: 281px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    padding: 0;
   }
 }
