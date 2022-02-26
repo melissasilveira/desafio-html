@@ -18,30 +18,33 @@ window.onload = () => {
       linkCloseMenu.style.display = 'none'
     })
   })
+  const form = document.querySelector('.contact-form')
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault()
+    const formData = new FormData(event.target)
+    const name = formData.get('name')
+    const email = formData.get('email')
+    const phone = formData.get('phone')
+    const message = formData.get('message')
+    let data = {
+      name: name,
+      email: email,
+      phone: phone,
+      message: message,
+    }
+    try {
+      const resp = await (
+        await fetch('https://otterwise-fake-api.herokuapp.com/contact', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json;charset=utf-8',
+          },
+          body: JSON.stringify(data),
+        })
+      ).json()
+      console.log(resp)
+    } catch (error) {
+      console.log(error)
+    }
+  })
 }
-
-const form = document.querySelector('.contact-form')
-form.addEventListener('submit', (event) => {
-  event.preventDefault()
-  const formData = new FormData(event.target)
-  const name = formData.get('#name')
-  const email = formData.get('#email')
-  const message = formData.get('#message')
-})
-
-let data = {
-  name: name,
-  email: email,
-  message: message,
-}
-
-fetch('https://otterwise-fake-api.herokuapp.com/contact', {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json;charset=utf-8',
-  },
-  body: JSON.stringify(data),
-})
-  .then((response) => response.json())
-  .then((response) => console.log(response))
-  .catch()
