@@ -52,8 +52,7 @@ header {
   height: 75px;
   justify-content: space-between;
   align-items: center;
-  margin-left: 30px;
-  margin-right: 36px;
+  padding: 36px;
 }
 
 .links {
@@ -61,7 +60,6 @@ header {
 }
 
 .logo {
-  justify-self: flex-start;
   width: 53px;
   height: 53px;
   top: 11px;
@@ -143,6 +141,20 @@ header {
   border: 1px solid #000000;
   box-sizing: border-box;
   border-radius: 10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+  padding: 8px 17px;
+}
+
+#name:focus-visible,
+#email:focus-visible,
+#phone:focus-visible {
+  outline: none;
+  border: 1px solid #bf9d69;
 }
 
 #message {
@@ -154,6 +166,18 @@ header {
   border: 1px solid #000000;
   box-sizing: border-box;
   border-radius: 10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+  padding: 8px 17px;
+}
+
+#message:focus-visible {
+  outline: none;
+  border: 1px solid #bf9d69;
 }
 
 button {
@@ -197,6 +221,45 @@ footer {
   position: fixed;
   top: 0;
   left: 0;
+}
+
+.navbar-mobile {
+  display: flex;
+  flex-flow: column;
+}
+
+.img-navbar-mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.hamburger-close {
+  width: 32px;
+  height: 32px;
+  left: 298px;
+  top: 22px;
+}
+
+.links-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-inline-start: 0px;
+  gap: 65px;
+  padding-top: 58px;
+}
+
+li,
+a {
+  display: inline-flex;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  color: #ffd18d;
 }
 
 @media only screen and (min-width: 480px) {

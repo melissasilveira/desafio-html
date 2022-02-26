@@ -22,8 +22,8 @@
         <img src="brand-logo.png" alt="Logo Pet" class="logo" />
         <img src="Hamburguer.png" alt="Menu Hamburguer" class="hamburger" />
         <ul class="links">
-          <li><a href="#">GALERIA</a></li>
-          <li><a href="#">CONTATO</a></li>
+          <li><a href="#pet-gallery">GALERIA</a></li>
+          <li><a href="#contact-section">CONTATO</a></li>
           <li><a href="#">SOCIAL</a></li>
         </ul>
       </nav>
@@ -36,10 +36,26 @@
           </p>
         </div>
       </div>
-      <div class="menu-mobile" id="menu-mobile"></div>
+      <div class="menu-mobile" id="menu-mobile">
+        <nav class="navbar-mobile">
+          <div class="img-navbar-mobile">
+            <img src="brand-logo.png" alt="Logo Pet" class="logo" />
+            <img
+              src="Hamburguer-close.png"
+              alt="Close Menu Hamburguer"
+              class="hamburger-close"
+            />
+          </div>
+          <ul class="links-mobile">
+            <li><a href="#pet-gallery">GALERIA</a></li>
+            <li><a href="#contact-section">CONTATO</a></li>
+            <li><a href="#">SOCIAL</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
-      <section class="gallery">
+      <section class="gallery" id="pet-gallery">
         <div class="container">
           <div class="photos">
             <img src="dog_1 1.png" alt="Black Dog" class="pet-photos" />
@@ -59,7 +75,7 @@
           </div>
         </div>
       </section>
-      <section class="contact-section">
+      <section class="contact-section" id="contact-section">
         <form class="contact-form">
           <label for="name">Nome Completo:</label>
           <input
